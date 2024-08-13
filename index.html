@@ -9,6 +9,11 @@
     <div id="counter">
         {{counter}} {{r}}
     </div>
+    <div id="bind-attribute">
+        <span v-bind:title="message">
+            Наведи на меня курсор на пару секунд, что бы увидеть динамически связанное значение title!
+        </span>
+    </div>
     <script src="https://unpkg.com/vue@3.4.35"></script>
      <!-- <script src="js/vue.global.js"></script> -->
     <script>
