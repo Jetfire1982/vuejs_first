@@ -10,6 +10,7 @@
         {{counter}} {{r}}
     </div>
     <div id="bind-attribute">
+        <!-- <span v-bind:title="message"> -->
         <span v-bind:title="message">
             Наведи на меня курсор на пару секунд, что бы увидеть динамически связанное значение title!
         </span>
@@ -33,6 +34,15 @@
 
         }
         Vue.createApp(Counter).mount('#counter')
+
+        const AttributeBinding = {
+            data(){
+                return {
+                    message: 'Страница загружена ' + new Date().toLocaleString()
+                }
+            }
+        }
+        Vue.createApp(AttributeBinding).mount('#bind-attribute')
     </script>
 </body>
 </html>
