@@ -15,34 +15,8 @@
             Наведи на меня курсор на пару секунд, что бы увидеть динамически связанное значение title!
         </span>
     </div>
-    <script src="https://unpkg.com/vue@3.4.35"></script>
-     <!-- <script src="js/vue.global.js"></script> -->
-    <script>
-        const Counter = {
-            data(){
-                return{
-                    counter:0,
-                    r:1
-                }
-            },
-            mounted(){
-                setInterval(()=>{
-                    this.counter++
-                    this.r++
-                }, 1000)
-            }
-
-        }
-        Vue.createApp(Counter).mount('#counter')
-
-        const AttributeBinding = {
-            data(){
-                return {
-                    message: 'Страница загружена ' + new Date().toLocaleString()
-                }
-            }
-        }
-        Vue.createApp(AttributeBinding).mount('#bind-attribute')
-    </script>
+    <!-- <script src="https://unpkg.com/vue@3.4.35"></script> -->
+     <script src="js/vue.global.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
